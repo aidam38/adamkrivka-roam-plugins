@@ -67,8 +67,10 @@ const moveFiles = async () => {
     ];
 
     for (move of moves) {
-      await clearFolder(move.target);
-      mergedirs(move.source, move.target);
+      if (!fs.existsSync(move.source)) {
+        await clearFolder(move.target);
+        mergedirs(move.source, move.target);
+      }
     }
   }
 };
