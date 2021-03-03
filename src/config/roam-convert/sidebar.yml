@@ -1,4 +1,4 @@
 - label: "roam/convert"
   items:
     - label: "Installation"
-      link: "/roam-plugins/roam-convert/hello_world"
+      link: "/roam-convert/hello_world"
