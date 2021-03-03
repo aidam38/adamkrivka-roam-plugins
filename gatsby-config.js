@@ -1,3 +1,10 @@
+const roamPlugins = [
+  { name: "roam-convert", repo: "https://github.com/aidam38/roam-convert" },
+  { name: "pyroam", repo: "https://github.com/aidam38/pyroam" },
+];
+
+const repoFolder = ".cache/plugin-repos/";
+
 module.exports = {
   siteMetadata: {
     siteTitle: `Rocket Docs`,
@@ -10,6 +17,8 @@ module.exports = {
     siteLanguage: `en`,
     themeColor: `#8257E6`,
     basePath: `/`,
+    roamPlugins: roamPlugins,
+    repoFolder: repoFolder,
   },
   plugins: [
     {
@@ -19,6 +28,7 @@ module.exports = {
         docsPath: `src/docs`,
         githubUrl: `https://github.com/rocketseat/gatsby-themes`,
         baseDir: `examples/gatsby-theme-docs`,
+        basePath: `roam-plugins/  `,
       },
     },
     {
