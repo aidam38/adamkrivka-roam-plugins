@@ -17,7 +17,7 @@ module.exports = {
     siteImage: ``,
     siteLanguage: `en`,
     themeColor: `#1E90FF`,
-    basePath: `/roam-plugins`,
+    basePath: `/`,
     roamPlugins: roamPlugins,
     repoFolder: repoFolder,
   },
@@ -29,7 +29,7 @@ module.exports = {
         docsPath: `src/docs`,
         githubUrl: `https://github.com/rocketseat/gatsby-themes`,
         baseDir: `examples/gatsby-theme-docs`,
-        basePath: `/`,
+        basePath: `/roam-plugins`,
       },
     },
     {
