@@ -17,7 +17,7 @@ module.exports = {
     siteImage: ``,
     siteLanguage: `en`,
     themeColor: `#1E90FF`,
-    basePath: `/`,
+    basePath: `/roam-plugins`,
     roamPlugins: roamPlugins,
     repoFolder: repoFolder,
   },
