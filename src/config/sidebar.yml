@@ -1,20 +1,10 @@
 - label: "Start here"
   link: "/"
-- label: "📓 pyroam"
-  link: "pyroam/"
+- label: "Plugins"
   items:
-    - label: "Installation"
-      link: "pyroam/"
-    - label: "Usage"
-      link: "pyroam/Usage"
-    - label: "Reporting bugs & Contributing"
-      link: "pyroam/Contributing"
-
-- label: "🗃️ roam/sr"
-  items:
-    - label: "Installation"
-      link: "roamsr/"
-- label: "🐾 LittleScripts"
-  items: 
-    - label: "Installation"
-      link: "littlescripts/"
+  - label: "📓 Pyroam"
+    link: "pyroam/"
+  - label: "🗃️ roam/sr"
+    link: "roamsr/"
+  - label: "🐾 LittleScripts"
+    link: "littlescripts/"
