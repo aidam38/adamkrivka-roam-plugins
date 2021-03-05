@@ -1,20 +1,21 @@
 const roamPlugins = [
-  { name: "roam-convert", repo: "https://github.com/aidam38/roam-convert" },
+  //  { name: "roam-convert", repo: "https://github.com/aidam38/roam-convert" },
   { name: "pyroam", repo: "https://github.com/aidam38/pyroam" },
   { name: "roamsr", repo: "https://github.com/aidam38/roamsr" },
+  { name: "littlescripts", repo: "https://github.com/aidam38/littlescripts" }
 ];
 
 const repoFolder = ".cache/plugin-repos/";
 
 module.exports = {
   siteMetadata: {
-    siteTitle: `Rocket Docs`,
-    defaultTitle: `Rocket Docs`,
-    siteTitleShort: `Rocket Docs`,
-    siteDescription: `Out of the box Gatsby Theme for creating documentation websites easily and quickly`,
-    siteUrl: `https://rocketdocs.netlify.com`,
-    siteAuthor: `@rocketseat`,
-    siteImage: ``,
+    siteTitle: `Roam plugins by Adam Krivka`,
+    defaultTitle: `Roam plugins by Adam Krivka`,
+    siteTitleShort: `Roam plugins by Adam Krivka`,
+    siteDescription: `Plugins for Roam Reserach by Adam Krivka (spaced repetition, Python notebooks, etc.)`,
+    siteUrl: `https://adamkrivka.com/roam-plugins`,
+    siteAuthor: `Adam Krivka`,
+    siteImage: `static/banner.png`,
     siteLanguage: `en`,
     themeColor: `#1E90FF`,
     basePath: `/roam-plugins`,

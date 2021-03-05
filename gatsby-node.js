@@ -57,12 +57,8 @@ const moveFiles = async () => {
         target: "src/docs/" + plugin.name,
       },
       {
-        source: pluginFolder + "/docs/config",
-        target: "src/config/" + plugin.name,
-      },
-      {
         source: pluginFolder + "/dist",
-        target: "static/" + plugin.name,
+        target: "static/roam-plugins/" + plugin.name,
       },
     ];
 
@@ -75,7 +71,25 @@ const moveFiles = async () => {
   }
 };
 
+const writeSidebar = async () => {
+  var final = "";
+  const defaultString = await fsPromise.readFile("src/config/default.yml.inactive")
+  final = final.concat(defaultString);
+  for (const plugin of roamPlugins) {
+    const pluginFolder = repoFolder + plugin.name;
+    const sidebarFile = pluginFolder + "/docs/config/sidebar.yml";
+    const sidebarString = await fsPromise.readFile(sidebarFile, "utf8")
+    console.log(sidebarString)
+    final = final.concat(sidebarString + "\n");
+  }
+
+  fs.writeFile("src/config/sidebar.yml", final, (err) => {
+    console.log(err)
+  })
+};
+
 exports.onPreBootstrap = async () => {
   await cloneRepos();
   await moveFiles();
+  await writeSidebar();
 };
