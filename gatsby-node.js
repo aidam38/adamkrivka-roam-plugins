@@ -57,6 +57,10 @@ const moveFiles = async () => {
         target: "src/docs/",
       },
       {
+        source: pluginFolder + "/docs/assets/",
+        target: "static/roam-plugins/assets/"
+      },
+      {
         source: pluginFolder + "/dist",
         target: "static/roam-plugins/" + plugin.name,
       },
