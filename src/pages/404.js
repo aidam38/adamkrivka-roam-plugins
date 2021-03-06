@@ -5,6 +5,9 @@ import Layout from '@rocketseat/gatsby-theme-docs/src/components/Layout';
 import SEO from '@rocketseat/gatsby-theme-docs/src/components/SEO';
 
 export default function NotFound() {
+  if (typeof window !== 'undefined') {
+    window.location = '/';
+  }
   return (
     <Layout title="Page not found!">
       <SEO title="404: Not found" />
